@@ -1,0 +1,39 @@
+@media screen and (min-width: 550px) {
+    .header-index{
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1em;
+    }
+    .menu{
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+    .menu > li a{
+        margin: 0 0 0 .2em;
+        color: #ffffffc4;
+        font-weight: 800;
+        background-color: #000000bb;
+        transition: all .5s ease-in-out;
+        border-radius: .3em;
+        font-size: 1em;
+    }
+    .menu > li a::after{
+        content: "";
+        display: block;
+        border-bottom: 2px solid transparent;
+        transition: all 1s ease-in-out;
+    }
+    .menu > li a:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 2px solid white;
+    }
+    .menu > li a:hover{
+        background-color: #000000e5;
+        color: white;
+    }
+}
