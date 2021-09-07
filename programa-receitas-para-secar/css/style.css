@@ -8,6 +8,14 @@ body{
     letter-spacing: 1px;
     line-height: 1.5;
 }
+.js .munu-nav{
+    display: none;
+}
+.js .logo-tipo{
+    text-align: left;
+    box-shadow: none;
+    margin-bottom: .1em;
+}
 .logo-tipo{
     background-color:transparent;
     text-align: center;
@@ -86,13 +94,21 @@ img{
     font-weight: 900;
     text-align: center;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 2em;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.692);
     animation: animations 1s ease-in-out alternate infinite;
+    transition-property: border-radius;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+.buttons:hover{
+    border-radius: 2em;
+    animation-play-state: paused;
 }
 @keyframes animations{
     from{
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
 }
 .video{
@@ -284,6 +300,9 @@ img{
         display: flex;
         align-items: flex-end;
         justify-content: center;
+    }
+    .buttons{
+        width: 70%;
     }
 }
 @media screen and (min-width:1366px){
