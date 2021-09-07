@@ -8,6 +8,57 @@ body{
     letter-spacing: 1px;
     line-height: 1.5;
 }
+.logo-tipo{
+    background-color:transparent;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 5px #000000d8;
+    box-shadow: 1px 3px 5px #000000b4;
+    border: none;
+}
+.munu-nav{
+    margin: 1em 0;
+    background-color: transparent;
+    animation: anima 1s ease-in-out;
+    /* transform: translateX(-101vw); */
+    /* animation-name: anima; */
+    /* animation-duration: 1s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-delay: .5s; */
+    /* animation-iteration-count: 3; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+    /* padding: 1em 0; */
+}
+@keyframes anima {
+    from{
+        transform: translateX(-101vw);
+    }
+    /* to {
+        transform: translateX(100%);
+    } */
+    
+}
+.munu-nav ul{
+    list-style: none;
+}
+.munu-nav li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 3px 4px #000000d7;
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    background-color: #00000042;
+    margin: .1em 0;
+}
 .container{
     background-color: transparent;
     padding: 1em;
@@ -37,6 +88,12 @@ img{
     padding: 1em;
     border-radius: 1em;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.692);
+    animation: animations 1s ease-in-out alternate infinite;
+}
+@keyframes animations{
+    from{
+        transform: scale(1.02);
+    }
 }
 .video{
     position: relative;
@@ -193,6 +250,40 @@ img{
     }
     .cliente-prs div img{
         width: 70%;
+    }
+    .logo-tipo{
+        animation: identifier 10s ease-in-out alternate infinite;
+        font-size: 1em;
+        padding: .5em;
+        box-shadow: none;
+        background: linear-gradient(-45deg, #ff0000cc, #000000af, #ffff0083) no-repeat;
+        background-size: 200% 200%;
+    }
+    @keyframes identifier {
+        from{background-position: 0 50%;}
+        to{background-position: 100% 50%;}
+        /* 100%{background-position: 0 50%;} */
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .munu-nav li a{
+        margin: 0 0 0 .1em;
+        font-size: 1em;
+        padding: .5em;
+        transition-property: background-color;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    }
+    .munu-nav li a:hover{
+        background-color: #000000e0;
+    }
+    .list-lis{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
 }
 @media screen and (min-width:1366px){
