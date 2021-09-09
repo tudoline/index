@@ -36,6 +36,7 @@ img{
     color: white;
     margin: .5em 0;
     background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 2em;
 }
 #button-1{
     display: block;

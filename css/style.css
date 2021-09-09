@@ -21,6 +21,9 @@ img{
     display: block;
     object-fit: cover;
 }
+.menu-navegacao{
+    display: none;
+}
 .container{
     width: 90%;
     margin: auto;
@@ -153,4 +156,7 @@ img{
     to{
         background-position: 50% 100%;
     }
+}
+.footer{
+    display: none;
 }
