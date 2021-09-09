@@ -14,18 +14,6 @@
         div.appendChild(iframe)
         paginaInicial.appendChild(div)
     }
-    
-    // if(localStorage.nene){
-    //     console.log("ja existe: ", localStorage.nene)
-    //     return
-    // }else{
-    //     console.log("insert")
-    //     localStorage.nene = "receitas"
-    // }
-    // setTimeout(() =>{
-    //     console.log("ola mundo")
-    // },10000)
-    // alert("ola mundo")
     let intervalo = setTimeout(() =>{
         criaDiv()
     },10000)
