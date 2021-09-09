@@ -1,6 +1,3 @@
-User-agent: Googlebot
-disallow: /contatoas/
-disallow: /sobre-nos/
 User-agent: *
 allow: /
 Sitemap: https://tudoline.github.io/index/.sitemap.xml
