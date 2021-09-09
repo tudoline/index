@@ -1,0 +1,4 @@
+Use-agent:*
+disallow: /contatoas/
+disallow: /sobre-nos/
+sitemap.xml
