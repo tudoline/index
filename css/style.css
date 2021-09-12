@@ -13,12 +13,58 @@
 
 }
 :root{
+    --texto-color-whitt-0: #ffffffe6;
+    --texto-color-whitt-1: #ffffffcc;
+    --texto-color-whitt-2: #ffffffb3;
+    --texto-color-whitt-3: #ffffff99;
+    --texto-color-whitt-5: #ffffff80;
+    --texto-color-whitt-6: #ffffff66;
+    --texto-color-whitt-7: #ffffff4d;
+    --texto-color-whitt-8: #ffffff33;
+    --texto-color-whitt-9: #ffffff1a;
+    --texto-color-black-0: #000000e6;
+    --texto-color-black-1: #000000cc;
+    --texto-color-black-2: #000000b3;
+    --texto-color-black-3: #00000099;
+    --texto-color-black-4: #00000080;
+    --texto-color-black-5: #00000066;
+    --texto-color-black-4: #0000004d;
+    --texto-color-black-7: #00000033;
+    --texto-color-black-8: #0000001a;
     --branco-1: white;
     --branco-2: #ffffffc2;
     --branco-3: #ffffffa1;
     --fundo-title: black;
     --fundo-title-1: #000000d3;
     --fundo-title-2: #000000ad;
+    --cores-fundo-red-0: rgba(255, 0, 0, 0.9);
+    --cores-fundo-red-1: rgba(255, 0, 0, 0.8);
+    --cores-fundo-red-2: rgba(255, 0, 0, 0.7);
+    --cores-fundo-red-3: rgba(255, 0, 0, 0.6);
+    --cores-fundo-red-4: rgba(255, 0, 0, 0.5);
+    --cores-fundo-red-5: rgba(255, 0, 0, 0.4);
+    --cores-fundo-red-6: rgba(255, 0, 0, 0.3);
+    --cores-fundo-red-7: rgba(255, 0, 0, 0.2);
+    --cores-fundo-red-8: rgba(255, 0, 0, 0.1);
+    --cores-blue-util-0: #0000ff;
+    --cores-blue-util-1: #0000ffcc;
+    --cores-blue-util-2: #0000ffb3;
+    --cores-blue-util-3: #0000ff99;
+    --cores-blue-util-4: #0000ff80;
+    --cores-blue-util-5: #0000ff66;
+    --cores-blue-util-6: #0000ff4d;
+    --cores-blue-util-7: #0000ff33;
+    --cores-blue-util-8: #0000ff1a;
+    --cores-yellow-util-0: rgba(255, 255, 0, 0.9);
+    --cores-yellow-util-1: rgba(255, 255, 0, 0.8);
+    --cores-yellow-util-2: rgba(255, 255, 0, 0.7);
+    --cores-yellow-util-3: rgba(255, 255, 0, 0.6);
+    --cores-yellow-util-4: rgba(255, 255, 0, 0.5);
+    --cores-yellow-util-5: rgba(255, 255, 0, 0.4);
+    --cores-yellow-util-6: rgba(255, 255, 0, 0.3);
+    --cores-yellow-util-7: rgba(255, 255, 0, 0.2);
+    --cores-yellow-util-8: rgba(255, 255, 0, 0.1);
+    
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,9 +80,10 @@ body{
     color: var(--branco-3);
     font-weight: 900;
     padding: .5em;
-    background-size: 120% 130% ;
-    background-image: linear-gradient(-45deg, #000000d5,#ff0000d5,#0000ffd5);
+    background-size: 150% 150%;
+    background-image: linear-gradient(-45deg, hsla(0, 0%, 0%, 0.5),hsla(0, 100%, 50%, 0.5),hsla(240, 100%, 50%, 0.5),rgba(255, 255, 0, 0.5));
     transition: color 1s ease-in-out;
+    /* animation: trasisao 1s linear alternate infinite; */
 }
 .logo-tipo:hover{
     color: var(--branco-2);
@@ -53,6 +100,13 @@ h3{font-size: 24px;}
 h4{font-size: 22px;}
 h5{font-size: 20px;}
 h6{font-size: 18px;}
+@keyframes trasisao{
+    from{
+        background-position: 0 150%;
+    }to{
+        background-position: 150% 0;
+    }
+}
 @keyframes iniciando-lef{
     from{
         transform: translateX(-1001%);

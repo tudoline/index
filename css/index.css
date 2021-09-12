@@ -19,7 +19,9 @@ body{
 }
 .header-index{
     margin-bottom: .5em;
-    background-color: tomato;
+    background-color: var(--texto-color-black-8);
+    /* background-color: var(--cores-fundo-red-5); */
+    /* background-image: linear-gradient(-45deg,var(--cores-fundo-red-5),var(--texto-color-black-5),var(--cores-fundo-red-3)); */
 }
 .menu-navegcaao{
     animation-name: iniciando-lef;
@@ -39,17 +41,17 @@ body{
     padding: .5em 0;
     background-color: transparent;
     margin: .5em 0;
-    color: var(--branco-2);
+    color: var(--texto-color-black-1);
     transition-property: background-color, color;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 .menu-navegcaao li a:hover{
-    background-color: var(--fundo-title-1);
+    background-color: var(--texto-color-black-4);
     color: var(--branco-3);
 }
 .card-h1{
-    color: var(--fundo-title-1);
+    color: var(--texto-color-black-3);
     text-align: left;
     font-size: .9em;
 }
