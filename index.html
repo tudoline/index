@@ -24,17 +24,25 @@
     <script src="https://kit.fontawesome.com/46d724c4ef.js" crossorigin="anonymous"></script>
     <!-- meus style css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="container">
         <!-- Inicio do header e menu de navegação -->
         <header class="header-index">
-            <div class="logotipo">
-                <a href="index.html">Tudo Online </a>
+            <div class="config-logo-menu-amburguer">
+                <div class="logotipo"><a class="logo-tipo" href="/">Tudo Online</a></div>
+            <div class="menu-amburgue">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu" class="label-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
             </div>
             <nav class="menu-navegcaao">
-                <ul class="header-index">
+                <ul class="header-nav">
                     <li> <a href="index.html">Home</a> </li>
                     <li> <a href="sobre-nos/index.html">Sobre</a></li>
                     <li> <a href="contatos/index.html">Contatos</a></li>
@@ -44,14 +52,12 @@
         <!-- Inico do site -->
         <main class="main">
             <section class="card">
-                <!-- <meta name="description" content="Vantagens de como perder peso em casa com receitas faceis e caseira"> -->
-                <!-- <meta name="keywords" content="programa receitas para secar, E-book receitas para secar em 30 dias"> -->
                 <h1 class="card-h1">Como funcioana o programa receitas para secar</h1>
                 <div class="card-container">
 
                     <article class="card-receitas-para-secar">
                         <a href="https://go.hotmart.com/E51906462N?ap=22af" target="_blanck">
-                            <div class="card-grid">
+                            <div class="imagens-personalizada">
                                 <img src="img/img-prs/programa-receitas-para-secar-e-book.jpg" alt="Conheçã o ebook tudo completo com varias receitas">
                                 <p>E-book Receitas para secar</p>
                             </div>
@@ -59,7 +65,7 @@
                     </article>
                     <article class="card-receitas-para-secar">
                         <a href="programa-receitas-para-secar/">
-                            <div class="card-grid"> 
+                            <div class="imagens-personalizada"> 
                                 <img src="img/img-prs/programa-receitas-para-secar-logo.jpg" alt="Image de receitas para secar logo original">
                                 <p>Conheçã o programa receitas</p>
                             </div>
@@ -67,7 +73,7 @@
                     </article>
                     <article class="card-receitas-para-secar">
                         <a href="https://go.hotmart.com/E51906462N?ap=22af" target="_blanck">
-                            <div class="card-grid">
+                            <div class="imagens-personalizada">
                                 <img src="img/img-prs/programa-receitas-para-secar-como-funciona.jpg" alt="Saiba os passo completo de como funciona">
                                 <p>Você vai saber como funcioana</p>
                             </div>
@@ -86,5 +92,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

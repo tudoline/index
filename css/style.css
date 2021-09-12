@@ -4,12 +4,47 @@
     box-sizing: border-box;
     line-height: 1.3;
     letter-spacing: 1px;
+    /* background-color: white; */
+}
+.config-logo-menu-amburguer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+:root{
+    --branco-1: white;
+    --branco-2: #ffffffc2;
+    --branco-3: #ffffffa1;
+    --fundo-title: black;
+    --fundo-title-1: #000000d3;
+    --fundo-title-2: #000000ad;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
     padding: 0 .5em;
+}
+.logo-tipo{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--branco-3);
+    font-weight: 900;
+    padding: .5em;
+    background-size: 120% 130% ;
+    background-image: linear-gradient(-45deg, #000000d5,#ff0000d5,#0000ffd5);
+    transition: color 1s ease-in-out;
+}
+.logo-tipo:hover{
+    color: var(--branco-2);
+    /* background-image: linear-gradient(-45deg,#0000ffd5,#000000d5,#ff0000d5); */
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 p,a,span,button,strong{font-size: 16px;}
 h1{font-size: 28px;}
@@ -18,3 +53,97 @@ h3{font-size: 24px;}
 h4{font-size: 22px;}
 h5{font-size: 20px;}
 h6{font-size: 18px;}
+@keyframes iniciando-lef{
+    from{
+        transform: translateX(-1001%);
+    }
+}
+@keyframes iniciando-rigth{
+    from{
+        transform: translateX(1001%);
+    }
+}
+.anima-left{
+    animation-name: iniciando-lef;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.imagens-personalizada{
+    display: grid;
+    margin: .5em 0;
+}
+.imagens-personalizada img{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: flex-end;
+    width: 100%;
+    object-fit: cover;
+    /* justify-self: end; */
+}
+.imagens-personalizada p{
+    grid-column: 1;
+    grid-row: 2 / 3;
+    background-color: var(--fundo-title-2);
+    color: var(--branco-2);
+    text-align: center;
+    padding: .5em;
+    align-self: flex-end;
+}
+
+/* Configuração de menu amburgue 
+
+    teara uma div class: menu-amburgue
+    input:checkbox id: checkbox-menu
+    label class: label-menu e 3 span
+
+*/
+.menu-amburgue{
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: transparent;
+    padding: .5em;
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+}
+.label-menu{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+.label-menu span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    transition: 0.25x ease-in-out;
+}
+.label-menu span:nth-child(1){
+    top: 0;
+}
+.label-menu span:nth-child(2){
+    top: 8px;
+}
+.label-menu span:nth-child(3){
+    top: 16px;
+}
+#checkbox-menu:checked + .label-menu span:nth-child(1){
+    transform: rotate(45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + .label-menu span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + .label-menu span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 8px;
+}
