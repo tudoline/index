@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5em 0;
+    margin: .5em 0;
+    background-color: var(--texto-color-black-7);
+}
+ul{
+    list-style: none;
+}

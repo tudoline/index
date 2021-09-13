@@ -1,0 +1,116 @@
+.container{background-color: var(--cores-yellow-util-7);}
+img{width: 100%;margin: 0 auto; object-fit: contain;}
+.titulo{padding: .5em 0;}
+.titulos h2{padding: .5em 0;}
+.img-receitas{margin: .5em 0;}
+.img-titulo h2{padding: .5em 0;}
+.cardapios{margin-bottom: .5em; box-shadow: 2px 3px 4px var(--texto-color-black-5);}
+.cardapios h2,p{padding: .1em 0;}
+.prova-social h1{padding: .5em 0;}
+.cliente-prs{padding: .5em;}
+.provasocial{
+    display: grid;
+}
+.cardapios img{
+    border-radius: 50%;
+    object-fit: contain;
+}
+@media screen and (min-width: 500px) {
+    .cardapios > h2,p{
+        margin: 0;
+        padding: .5em;
+        
+        /* justify-self: end; */
+        /* align-self: flex-end; */
+        /* background-color: blue; */
+    }
+    .cardapios img{
+        /* justify-self: flex-end; */
+        /* align-items: flex-end; */
+        justify-content: start;
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    .provasocial{
+        display: grid;
+        /* width: 90%; */
+        gap: .5em;
+        margin: 1em auto;
+        padding: 0;
+    }
+    .prova-social img{
+        grid-column: 1;
+        object-fit: contain;
+    }
+    .prova-social .titulo{
+        grid-column: 3;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+.edite-title{
+    border-bottom: 2px solid var(--texto-color-black-5);
+    transition: .5s ease-in-out;
+}
+.edite-title:hover{
+    border-color: var(--texto-color-black-0);
+}
+@media screen and (min-width: 800px) {
+    .video-container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .img-receitas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+        box-shadow: 1px 2px 3px 4px var(--texto-color-black-7);
+        background-color: var(--cores-yellow-util-7);
+    }
+    .img-tamanhos-3{
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+        align-self: center;
+        justify-self: center;
+    }
+    .titulo-flutuante{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .titulo-flutuante > p{
+        width: 50%;
+    }
+    .provasocial{
+        display: grid;
+        width: 70%;
+        margin: 1em auto;
+        padding: 0;
+    }
+    .prova-social img{
+        grid-column: 1;
+        object-fit: contain;
+    }
+    .prova-social .titulo{
+        grid-column: 3;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttons{
+        width: 70%;
+    }
+    
+}
+

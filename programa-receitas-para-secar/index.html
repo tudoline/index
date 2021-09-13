@@ -11,23 +11,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../img/tudo-online-favoicon/tudo-online-favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/tudo-online-favoicon/tudo-online-favicon-16x16.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .munu-nav{
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style-receitas-para-secar.css">
 </head>
 <body>
 <div class="container">
-    <header class="header">
-        <div class="logotipo"><a class="logo-tipo" href="/">Tudo Online</a></div>
-        <!-- <a class="logo-tipo" href="../index.html"><h1>Tudo Online</h1></a> -->
-        <nav class="munu-nav">
-            <ul class="list-lis">
-                <li><a href="#">Receitas</a></li>
-                <li><a href="#"> dietas</a></li>
-                <li><a href="#">E-book Dowload</a></li>
+    <header class="header-index">
+        <div class="tudo-digita-container">
+            <div class="config-logo-menu-amburguer">
+                <div class="logotipo"><a class="logo-tipo" href="../index.html">Tudo Online</a>
+            </div>
+            <div class="menu-amburgue">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu" class="label-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <!-- </div> -->
+        <nav class="tudo-digital-menu" style="display: none;">
+            <ul class="tudo-digital-lista">
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="index.html">Sobre</a></li>
+                <li> <a href="index.html">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -54,16 +61,18 @@
                 Para dizer o mínimo, você não precisa seguir um programa dietético rigoroso para perder peso rapidamente. Como afirmado anteriormente, um estilo de vida saudável é um pré-requisito para a manutenção de um peso saudável. Seguindo as dicas , você pode perder peso sem passar pelas dores de uma dieta radical.: 
                 <div class="card">
                     <h2>6 Transformações Impactantes em Seu Corpo nas próximas semanas:</h2>
-                    <p>Barriga diminue até 12cm por mês </p>
-                    <p>Pernas desincham bastante</p>
-                    <p>Redução de peso  (de 5 a 10 quilos)</p>
-                    <p>Reduz as dores nas costas </p>
-                    <p>Melhora o diabetes e colesterol alto</p>
-                    <p>Tira a ansiedade de comer compulsivamente </p>
+                    <div class="titulo-flutuante">
+                        <p class="verificado">Barriga diminue até 12cm por mês </p>
+                        <p class="verificado">Pernas desincham bastante</p>
+                        <p class="verificado">Redução de peso  (de 5 a 10 quilos)</p>
+                        <p class="verificado">Reduz as dores nas costas </p>
+                        <p class="verificado">Melhora o diabetes e colesterol alto</p>
+                        <p class="verificado">Tira a ansiedade de comer compulsivamente </p>
+                    </div>
                 </div>
             </article>
             <article class="img-receitas">
-                <img src="img-receitas-para-secar/receitas-programa-receitas-para-secar.png" alt="Conheçã o programa receitas para secar">
+                <img class="img-tamanhos-3" src="img-receitas-para-secar/receitas-programa-receitas-para-secar.png" alt="Conheçã o programa receitas para secar">
                 <div class="img-titulo">
                     <h2>ÚLTIMAS HORAS COM VALOR PROMOCIONAL DISPONÍVEL!</h2>
                     <p>Reeducação com Receitas</p>
@@ -78,7 +87,7 @@
         </section>
         <section class="receitas-dtx">
             <h2>O Programa é a base de que alimentos simples que você tem em casa, são muitas receitas como</h2>
-            <div class="cardapio-container">
+            <div class="cardapio-container grid-colun-01 grid-colun-04">
                 <article class="cardapios">
                     <img src="img-receitas-para-secar/receitas-suco-dextox.png" alt="">
                     <h2>Sucos Detox Para Desintoxicar</h2>
@@ -116,7 +125,7 @@
                 <img src="" alt="">
             </div>
         </section>
-        <section>
+        <section class="prova-social">
             <h1>Pessoas reais que já tiveram resultados surpreendentes com as nossas Receitas:</h1>
             <div>
                 <article class="provasocial">
@@ -145,7 +154,7 @@
                 <h2>Prepare-se para um novo método alimentar que vai mudar o seu corpo!</h2>
                 <p>O passo a passo completo do seu resultado cabe na palma da sua mão. Rápido e prático!</p>
                 <div>
-                    <img src="img-receitas-para-secar/clientes-programa-receitas-para-seca.png" alt="">
+                    <img class="img-tamanhos-2" src="img-receitas-para-secar/clientes-programa-receitas-para-seca.png" alt="">
                 </div>
             </article>
         </section>
@@ -153,6 +162,7 @@
     </main>
     <!-- <iframe src="" frameborder="0"></iframe> -->
 </div>
+<script src="../js/script.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
